@@ -56,7 +56,6 @@
         "**/tmp/**": true,
         "**/vendor/**": true
     },
-    "git.enabled": false,
     "notebook.diff.ignoreMetadata": true,
     "notebook.lineNumbers": "on",
     "notebook.markup.fontSize": 13,
@@ -77,11 +76,19 @@
     "telemetry.telemetryLevel": "off",
     "window.restoreWindows": "none",
     "window.newWindowDimensions": "maximized",
-    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.panel.defaultLocation": "right",
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "editor.unicodeHighlight.allowedLocales": {
+      "fr": true
+    },
+    "markdown.marp.enableHtml": true,
+    "window.zoomLevel": 1,
+    "diffEditor.renderSideBySide": false,
 }

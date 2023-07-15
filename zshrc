@@ -4,10 +4,10 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search)
+plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search ssh-agent)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
-export HOMEBREW_NO_ANALYTICS=1
+# export HOMEBREW_NO_ANALYTICS=1
 
 # Disable warning about insecure completion-dependent directories
 ZSH_DISABLE_COMPFIX=true
@@ -70,3 +70,16 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+eval "$(rbenv init - zsh)"
+PATH="${HOME}/.rbenv/shims:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/sum/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+# export NODE_OPTIONS=--openssl-legacy-provider
+
+alias codecode="unset NODE_OPTIONS; code ."
+
+export PATH="/opt/brew/bin:$PATH"
+export PATH=~/.npm-global/bin:$PATH
